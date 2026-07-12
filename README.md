@@ -145,32 +145,6 @@ Recruiter Analytics Dashboard
 
 ---
 
-# Application Preview
-
-### Home Page
-
-![Home](screenshots/home.png)
-
----
-
-### Resume Analysis
-
-![Resume Analysis](screenshots/resume_analysis.png)
-
----
-
-### Recommendation Dashboard
-
-![Recommendation Dashboard](screenshots/dashboard.png)
-
----
-
-### Recruiter Dashboard
-
-![Recruiter Dashboard](screenshots/recruiter_dashboard.png)
-
----
-
 # Installation
 
 ## Clone Repository
