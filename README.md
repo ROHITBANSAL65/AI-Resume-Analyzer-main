@@ -1,176 +1,221 @@
-<p align="center">
-  <small>Best viewed in <a href="https://github.com/settings/appearance">Light Mode</a> and on a Desktop (Recommended)</small>
-</p>
+# AI Resume Analyzer
 
-<div align="center">
-
-# 🌴 AI RESUME ANALYZER 🌴
-
-A Tool for Resume Analysis, Predictions, and Recommendations
-
-
-
-</div>
+An AI-powered Resume Analysis platform that automates resume parsing, candidate profiling, ATS-style evaluation, skill extraction, and personalized career recommendations using Natural Language Processing (NLP), Machine Learning, and Streamlit.
 
 ---
 
-## 📌 About the Project
+## Business Problem
 
-<div align="center">
-  <p align="justify">
-    A tool that parses information from a resume using Natural Language Processing (NLP), extracts relevant keywords, clusters them by sectors, and provides recommendations, predictions, and analytics to the applicant or recruiter based on keyword matching.
-  </p>
-</div>
+Recruiters often spend significant time manually reviewing resumes, while candidates struggle to understand how well their resumes align with industry expectations and job requirements.
+
+This project automates resume analysis by extracting candidate information, identifying technical skills, evaluating resume quality, predicting candidate profiles, and generating personalized recommendations to improve hiring efficiency and candidate readiness.
 
 ---
 
-## 🎯 Scope
+## Objectives
 
-1. Convert resumes into structured tabular and CSV formats for analytics.
-2. Provide resume improvement suggestions, predictions, and scores.
-3. Increase traffic via a user-friendly interface and user engagement features.
-4. Help colleges evaluate students' resumes before placements.
-5. Offer analytics on trending job roles users seek.
-6. Continuously improve the tool using user feedback.
-
----
-
-## 🔧 Tech Stack
-
-<details>
-  <summary>Frontend</summary>
-  <ul>
-    <li><a href="https://streamlit.io/">Streamlit</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML">HTML</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript">JavaScript</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Backend</summary>
-  <ul>
-    <li><a href="https://streamlit.io/">Streamlit</a></li>
-    <li><a href="https://www.python.org/">Python</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Database</summary>
-  <ul>
-    <li><a href="https://www.mysql.com/">MySQL</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Python Modules</summary>
-  <ul>
-    <li><a href="https://pandas.pydata.org/">pandas</a></li>
-    <li><a href="https://github.com/OmkarPathak/pyresparser">pyresparser</a></li>
-    <li><a href="https://pypi.org/project/pdfminer3/">pdfminer3</a></li>
-    <li><a href="https://plotly.com/">Plotly</a></li>
-    <li><a href="https://www.nltk.org/">NLTK</a></li>
-  </ul>
-</details>
+- Automate resume parsing using Natural Language Processing.
+- Extract candidate information and technical skills.
+- Evaluate resumes using ATS-inspired scoring.
+- Predict candidate experience level.
+- Generate personalized career recommendations.
+- Provide recruiter analytics through an interactive dashboard.
 
 ---
 
-## 🚀 Features
+## Technology Stack
 
-### 🧑‍💻 Client
-
-* Parse resume to extract:
-
-  * Basic Information
-  * Skills
-  * Keywords
-* Recommend:
-
-  * Additional skills
-  * Predicted job roles
-  * Relevant courses and certificates
-  * Resume tips
-  * Videos for resume/interview tips
-  * Overall resume score
-
-### 👨‍💼 Admin
-
-* View and export user data in CSV format.
-* Access uploaded resumes.
-* View feedback and ratings.
-* Visual analytics through pie charts:
-
-  * Ratings
-  * Predicted roles
-  * Experience levels
-  * Resume scores
-  * Geographic data (City, State, Country)
-
-### 📝 Feedback
-
-* Collect ratings (1–5) and comments via form.
-* Show past feedback and overall rating analytics.
+| Technology | Purpose |
+|------------|---------|
+| Python | Backend Development |
+| Streamlit | Web Application |
+| spaCy | Natural Language Processing |
+| PyResparser | Resume Parsing |
+| Scikit-learn | Machine Learning |
+| Pandas | Data Processing |
+| MySQL | Database Management |
+| Plotly | Data Visualization |
 
 ---
 
-## 📦 Requirements
+# Project Workflow
 
-Make sure the following are installed:
+## 1. Resume Upload
 
-1. Python 3.9.12: [Download](https://www.python.org/downloads/release/python-3912/)
-2. MySQL: [Download](https://www.mysql.com/downloads/)
-3. Visual Studio Code (Preferred): [Download](https://code.visualstudio.com/Download)
-4. Visual Studio Build Tools for C++: [Download](https://aka.ms/vs/17/release/vs_BuildTools.exe)
+Candidates upload resumes in PDF format through the Streamlit web application.
 
 ---
 
-## ⚙️ Setup & Installation
+## 2. Resume Parsing
 
-Follow these steps to run the project:
+Resume information is automatically extracted using NLP techniques.
 
-### 1. Clone the repository
+Extracted information includes:
 
-```bash
-git clone <repo-url>
+- Name
+- Email Address
+- Phone Number
+- Skills
+- Education
+- Work Experience
+- Certifications
+
+---
+
+## 3. Resume Analysis
+
+The application evaluates resumes by performing:
+
+- Resume Scoring
+- Skill Extraction
+- Experience Prediction
+- Domain Classification
+- ATS-style Resume Evaluation
+
+---
+
+## 4. Recommendation Engine
+
+Based on extracted skills and candidate profile, personalized recommendations are generated for:
+
+- Web Development
+- Android Development
+- iOS Development
+- Data Science
+- Machine Learning
+- UI/UX
+
+The system also recommends additional skills and technologies to improve employability.
+
+---
+
+## 5. Recruiter Dashboard
+
+The recruiter module provides:
+
+- Resume Database
+- Candidate Analytics
+- Skill Distribution
+- Experience Analysis
+- Resume Score Comparison
+
+---
+
+# Key Features
+
+- Automated Resume Parsing
+- NLP-based Skill Extraction
+- ATS-inspired Resume Scoring
+- Candidate Experience Prediction
+- Domain Classification
+- Personalized Skill Recommendations
+- Resume Analytics Dashboard
+- Recruiter Dashboard
+- MySQL Database Integration
+- Interactive Streamlit Interface
+
+---
+
+# System Architecture
+
+```text
+Resume Upload
+      │
+      ▼
+NLP Resume Parsing
+      │
+      ▼
+Information Extraction
+      │
+      ▼
+Skill Identification
+      │
+      ▼
+Resume Scoring
+      │
+      ▼
+Experience Prediction
+      │
+      ▼
+Recommendation Engine
+      │
+      ▼
+Recruiter Analytics Dashboard
 ```
 
-### 2. Create and activate a virtual environment
+---
+
+# Application Preview
+
+### Home Page
+
+![Home](screenshots/home.png)
+
+---
+
+### Resume Analysis
+
+![Resume Analysis](screenshots/resume_analysis.png)
+
+---
+
+### Recommendation Dashboard
+
+![Recommendation Dashboard](screenshots/dashboard.png)
+
+---
+
+### Recruiter Dashboard
+
+![Recruiter Dashboard](screenshots/recruiter_dashboard.png)
+
+---
+
+# Installation
+
+## Clone Repository
 
 ```bash
-python -m venv venvapp
-cd venvapp/Scripts
-activate
+git clone https://github.com/ROHITBANSAL65/AI-Resume-Analyzer.git
+
+cd AI-Resume-Analyzer
 ```
 
-### 3. Install required packages
+---
+
+## Create Virtual Environment
 
 ```bash
-cd ../..
-cd App
+python -m venv venv
+
+venv\Scripts\activate
+```
+
+---
+
+## Install Dependencies
+
+```bash
 pip install -r requirements.txt
+
 python -m spacy download en_core_web_sm
 ```
 
-### 4. Set up the database
+---
 
-* Create a MySQL database named `cv`.
-* Update the credentials in `App.py`.
+## Configure Database
 
-### 5. Replace pyresparser script
+Create a MySQL database named:
 
-Navigate to:
-
-```
-venvapp\Lib\site-packages\pyresparser
+```text
+cv
 ```
 
-Replace `resume_parser.py` with the one provided in the `pyresparser` folder.
+Update the database credentials in `App.py`.
 
 ---
 
-🎉 **Congratulations!** Your setup is complete.
-
-Now, with your `venvapp` activated and working directory set to `App`, start the application:
+## Run the Application
 
 ```bash
 streamlit run App.py
@@ -178,35 +223,51 @@ streamlit run App.py
 
 ---
 
-## ❗ Known Issues
+# Repository Structure
 
-* If you face a `GeocoderUnavailable` error, check your internet connection and speed.
-
----
-
-## 🧪 Usage
-
-* Upload a resume and watch the magic happen!
-* Start testing with the sample resume in the `Uploaded_Resumes` folder.
-* Admin credentials:
-
-  * **Username**: `admin`
-  * **Password**: `admin@resume-analyzer`
-
-
-
-## 🛣️ Roadmap
-
-* [x] Predict user experience level.
-* [x] Add scoring criteria for skills and projects.
-* [x] Recommendations for web, Android, iOS, and data science.
-* [ ] Add roles and recommendations for other domains.
-* [x] Extract more resume details.
-* [ ] Add view for individual user details.
+```text
+AI-Resume-Analyzer/
+│
+├── App/
+├── Uploaded_Resumes/
+├── pyresparser/
+├── screenshots/
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-## 🤝 Contributing
+# Skills Demonstrated
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to improve.
+- Natural Language Processing (NLP)
+- Resume Parsing
+- Information Extraction
+- Machine Learning
+- Recommendation Systems
+- Data Processing
+- Feature Engineering
+- Streamlit Development
+- MySQL Database Integration
+- Data Visualization
+- Python
 
+---
+
+# Future Enhancements
+
+- Multi-language Resume Support
+- AI-powered Resume Improvement Suggestions
+- Resume Similarity Search
+- Interview Question Recommendation
+- Cloud Deployment
+- LLM-powered Resume Review
+
+---
+
+## Author
+
+**Rohit Bansal**
+
+- **GitHub:** https://github.com/ROHITBANSAL65
+- **LinkedIn:** https://www.linkedin.com/in/rohit-bansal-1b2457286
